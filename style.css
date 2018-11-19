@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*
+	--color1: #CFFCFF;
+	--color2: #AAEFDF;
+	--color3: #9EE37D;
+	--color4: #63C132;
+	--color5: #358600;
+*/
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	margin: 0;
+}
+
+p {
+	color: #363636;
+	font-size: 18pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #363636;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#home, #register {
+	height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .holder {
+	position: absolute;
+	bottom: 16%;
+	right: 8%;
+	background-color: rgba(207,253,255,.8);
+	border-radius: 50px;
+	padding: 20px;
+	width: 40%;
+	box-shadow: 5px 5px 12px #aaa;
+}
+
+#register .holder {
+	position: absolute;
+	bottom: 16%;
+	right: 8%;
+	background-color: rgba(207,253,255,.8);
+	border-radius: 50px;
+	padding: 20px;
+	width: 50%;
+	box-shadow: 5px 5px 12px #aaa;
+}
+
+#register label {
+	width: 40%;
+	margin-right: 5%;
+	display: inline-block;
+}
+
+#register input {
+	width: 50%;
+	display: inline-block;
+}
+
+#home h1 {
+    font-size: 7em;
+	text-align: center;
+	color: #63C132;
+}
+
+
+#register h1 {
+    font-size: 4em;
+	text-align: center;
+	color: #63C132;
+}
+
+.navholder {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+.navholder a, .nav a {
+	color: #363636;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.navholder a:visited, .nav a:visited {
+	color: #363636;
+}
+
+.navholder a:hover, .navholder a:focus, .nav a:hover, .nav a:focus {
+	text-decoration: none;
+	color: #9EE37D;
+}
+
+.nav {
+	display: grid;
+	background-image: linear-gradient(#CFFCFF, #AAEFDF);
+	padding: 10px 30px;
+	text-align: center;
+	grid-template-columns: 45% 20% 20% 5%;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	width:100%;
+	top:0;
+}
+
+.nav img {
+	max-width: 50%;
+}
+
+body#browse, body#otherpuppy {
+	margin-top: 100px;
+}
+
+.nav a:first-child {
+	font-size: 3em;
+	text-align: left;
+}
+
+.active {
+	color: #9EE37D !important;
+}
+
+.title {
+	font-size: 4em;
+	text-align: center;
+	color: #363636;
+}
+
+div.login {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+/*
+div.login input {
+	display: block;
+	margin: 10px auto;
+	border-radius: 5px;
+	padding: 5px;
+	width: 80%;
+}
+*/
+
+button {
+	display: block;
+	border-radius: 5px;
+	padding: 5px;
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+div.login h3, div.register h3 {
+	text-align: center;
+}
+
+/*
+div.login div:first-child input:nth-child(3), div.login div:nth-child(2) input:nth-child(5) {
+	width: 50%;
+}
+*/
+
+body#browse {
+	background-image: url("images/bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#browse .title, #otherpuppy .title {
+	background-color: white;
+	width: fit-content;
+	margin: 20px auto;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: 3px solid #363636;
+	box-shadow: 3px 3px 8px #aaa;
+}
+
+.browse {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20%;
+	grid-gap: 5%;
+	width: 90%;
+	margin: 10px auto;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.browse h3, .browse p {
+	color: #363636;
+}
+
+.browse p {
+	font-size: 100%;
+}
+
+.browse a:hover {
+	text-decoration: none;
+}
+
+.browse div {
+	border: 3px solid #363636;
+	padding: 10px 20px;
+	border-radius: 20px;
+	background-color: white;
+	-webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.browse div:hover {
+	background-color: #9EE37D;
+}
+
+.browse img {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+
+body#otherpuppy {
+	background-image: url("images/grass.jpg");
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+
+.otherpuppy {
+	display: grid;
+	grid-template-columns: 55% 35%;
+	grid-gap: 10%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.otherpuppy img {
+	display: block;
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+.otherpuppy > div {
+	background-color: white;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.otherpuppy .carousel-inner {
+	border-radius: 20px;
+}
+
+#otherpuppy .back {
+	position: fixed;
+	top: 100px;
+	left: 50px;
+	font-size: 64px;
+}
+
+#otherpuppy .back a, #otherpuppy .back a:hover {
+	color: white;
+	text-decoration: none;
+}

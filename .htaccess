@@ -1,0 +1,4 @@
+AddHandler application/x-httpd-php73 .php .php5 .php4 .php3
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
